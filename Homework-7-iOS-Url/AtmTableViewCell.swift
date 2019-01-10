@@ -9,5 +9,11 @@
 import UIKit
 
 class AtmTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var addressTextView: UITextView!
+    
+    func setup(with AtmObject: AtmObject) {
+        addressTextView.text = AtmObject.fullAddressUa
+        addressTextView.layer.cornerRadius = 8
+    }
 }

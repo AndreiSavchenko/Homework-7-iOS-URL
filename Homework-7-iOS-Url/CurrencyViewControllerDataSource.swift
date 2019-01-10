@@ -55,7 +55,8 @@ extension CurrencyViewControllerDataSource: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch currencyModels.count {
         case 0:
-            showErrorLabel(message: "No Data")
+            currencyTableView.backgroundColor = UIColor.blue
+            showErrorLabel(message: "")
             return 0
         default:
             return currencyModels.count == 1 && currencyModels.first is CurrencyNetworkError ? 0 : currencyModels.count

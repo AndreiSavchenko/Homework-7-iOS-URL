@@ -39,21 +39,25 @@
                                 <state key="normal" title="Search">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="searchButton:" destination="JKr-iD-e3g" eventType="touchUpInside" id="3S1-gb-c7C"/>
+                                </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="M0z-1g-ZG9">
-                                <rect key="frame" x="30" y="157" width="315" height="461"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="M0z-1g-ZG9">
+                                <rect key="frame" x="10" y="157" width="355" height="461"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vBj-65-Hfl" firstAttribute="leading" secondItem="yz2-GH-OOQ" secondAttribute="leading" constant="30" id="6jR-6l-6DN"/>
-                            <constraint firstItem="yz2-GH-OOQ" firstAttribute="trailing" secondItem="M0z-1g-ZG9" secondAttribute="trailing" constant="30" id="7As-qJ-38X"/>
+                            <constraint firstItem="yz2-GH-OOQ" firstAttribute="trailing" secondItem="M0z-1g-ZG9" secondAttribute="trailing" constant="10" id="7As-qJ-38X"/>
                             <constraint firstItem="vBj-65-Hfl" firstAttribute="top" secondItem="UC1-X5-X6g" secondAttribute="bottom" constant="20" id="7nk-Ly-CA4"/>
                             <constraint firstItem="M0z-1g-ZG9" firstAttribute="top" secondItem="Rf8-Vw-24S" secondAttribute="bottom" constant="20" id="AFr-KW-hV9"/>
                             <constraint firstItem="Rf8-Vw-24S" firstAttribute="top" secondItem="UC1-X5-X6g" secondAttribute="bottom" constant="18" id="Dg6-4r-W0C"/>
                             <constraint firstItem="Rf8-Vw-24S" firstAttribute="leading" secondItem="vBj-65-Hfl" secondAttribute="trailing" constant="20" id="IzN-FJ-XM2"/>
-                            <constraint firstItem="M0z-1g-ZG9" firstAttribute="leading" secondItem="yz2-GH-OOQ" secondAttribute="leading" constant="30" id="Lj4-zR-wDF"/>
+                            <constraint firstItem="M0z-1g-ZG9" firstAttribute="leading" secondItem="yz2-GH-OOQ" secondAttribute="leading" constant="10" id="Lj4-zR-wDF"/>
                             <constraint firstItem="UC1-X5-X6g" firstAttribute="centerX" secondItem="yz2-GH-OOQ" secondAttribute="centerX" id="Pvd-OG-1rC"/>
                             <constraint firstItem="UC1-X5-X6g" firstAttribute="top" secondItem="yz2-GH-OOQ" secondAttribute="top" constant="30" id="gUz-Wg-0Qm"/>
                             <constraint firstItem="yz2-GH-OOQ" firstAttribute="bottom" secondItem="M0z-1g-ZG9" secondAttribute="bottom" id="pLc-Iz-idq"/>
@@ -62,6 +66,10 @@
                         <viewLayoutGuide key="safeArea" id="yz2-GH-OOQ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="ATM" image="atm-30" id="72s-jd-DMg"/>
+                    <connections>
+                        <outlet property="atmTableView" destination="M0z-1g-ZG9" id="gdu-At-dHq"/>
+                        <outlet property="citySearchTextField" destination="vBj-65-Hfl" id="szE-QQ-TSu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qbh-SP-eYw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,7 +128,7 @@
                                 </constraints>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="q1c-EO-8mM" firstAttribute="trailing" secondItem="ZBN-Gs-iV6" secondAttribute="trailing" constant="65" id="K7q-D2-JmO"/>
                             <constraint firstItem="ZBN-Gs-iV6" firstAttribute="leading" secondItem="czm-kO-O4s" secondAttribute="trailing" constant="50" id="S1E-kQ-PlU"/>

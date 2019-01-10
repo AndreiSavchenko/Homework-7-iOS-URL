@@ -21,24 +21,4 @@ class CurrencyTableViewCell: UITableViewCell {
         buyTextField.text = CurrencyObject.buy
         saleTextField.text = CurrencyObject.sale
     }
-    //    @IBOutlet private weak var mediaDescription: UILabel!
-//    @IBOutlet private weak var mediaTitle: UILabel!
-//    @IBOutlet private weak var mediaImageView: UIImageView!
-//
-//    func setup(with media: MediaObject) {
-//        setImage(url: media.artworkUrl100 ?? "")
-//        mediaTitle.text = media.artistName
-//        mediaDescription.text = media.trackName
-//    }
-//
-//    private func setImage(url: String) {
-//        do {
-//            let url = URL(string: url)
-//            let data = try Data(contentsOf: url ?? .init(fileURLWithPath: ""))
-//            self.mediaImageView.image = UIImage(data: data)
-//        }
-//        catch{
-//            print(error)
-//        }
-//    }
 }
