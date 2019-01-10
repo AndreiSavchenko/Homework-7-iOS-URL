@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="meU-2J-l4w">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ATM-->
+        <scene sceneID="SMI-0Q-GCH">
+            <objects>
+                <viewController storyboardIdentifier="AtmViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JKr-iD-e3g" customClass="AtmViewController" customModule="Homework_7_iOS_Url" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="azj-D5-hbe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATM Locations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UC1-X5-X6g">
+                                <rect key="frame" x="91.5" y="50" width="192" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Сity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vBj-65-Hfl">
+                                <rect key="frame" x="30" y="106" width="241" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rf8-Vw-24S">
+                                <rect key="frame" x="291" y="104" width="54" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="0El-y0-Hhd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="M0z-1g-ZG9">
+                                <rect key="frame" x="30" y="157" width="315" height="461"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstItem="vBj-65-Hfl" firstAttribute="leading" secondItem="yz2-GH-OOQ" secondAttribute="leading" constant="30" id="6jR-6l-6DN"/>
+                            <constraint firstItem="yz2-GH-OOQ" firstAttribute="trailing" secondItem="M0z-1g-ZG9" secondAttribute="trailing" constant="30" id="7As-qJ-38X"/>
+                            <constraint firstItem="vBj-65-Hfl" firstAttribute="top" secondItem="UC1-X5-X6g" secondAttribute="bottom" constant="20" id="7nk-Ly-CA4"/>
+                            <constraint firstItem="M0z-1g-ZG9" firstAttribute="top" secondItem="Rf8-Vw-24S" secondAttribute="bottom" constant="20" id="AFr-KW-hV9"/>
+                            <constraint firstItem="Rf8-Vw-24S" firstAttribute="top" secondItem="UC1-X5-X6g" secondAttribute="bottom" constant="18" id="Dg6-4r-W0C"/>
+                            <constraint firstItem="Rf8-Vw-24S" firstAttribute="leading" secondItem="vBj-65-Hfl" secondAttribute="trailing" constant="20" id="IzN-FJ-XM2"/>
+                            <constraint firstItem="M0z-1g-ZG9" firstAttribute="leading" secondItem="yz2-GH-OOQ" secondAttribute="leading" constant="30" id="Lj4-zR-wDF"/>
+                            <constraint firstItem="UC1-X5-X6g" firstAttribute="centerX" secondItem="yz2-GH-OOQ" secondAttribute="centerX" id="Pvd-OG-1rC"/>
+                            <constraint firstItem="UC1-X5-X6g" firstAttribute="top" secondItem="yz2-GH-OOQ" secondAttribute="top" constant="30" id="gUz-Wg-0Qm"/>
+                            <constraint firstItem="yz2-GH-OOQ" firstAttribute="bottom" secondItem="M0z-1g-ZG9" secondAttribute="bottom" id="pLc-Iz-idq"/>
+                            <constraint firstItem="yz2-GH-OOQ" firstAttribute="trailing" secondItem="Rf8-Vw-24S" secondAttribute="trailing" constant="30" id="tRO-Fo-95z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yz2-GH-OOQ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ATM" image="atm-30" id="72s-jd-DMg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qbh-SP-eYw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="981.85907046476768"/>
+        </scene>
+        <!--Currency-->
+        <scene sceneID="IW5-DP-SrV">
+            <objects>
+                <viewController storyboardIdentifier="CurrencyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tCz-71-PlF" customClass="CurrencyViewController" customModule="Homework_7_iOS_Url" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sgt-ts-8Tj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHw-We-LeD">
+                                <rect key="frame" x="158" y="292" width="59" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="TDr-6h-eOC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Refresh">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exchange Rates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11M-TK-CME">
+                                <rect key="frame" x="84.5" y="50" width="206.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czm-kO-O4s">
+                                <rect key="frame" x="202" y="106" width="57" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Z1M-OW-Hdm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBN-Gs-iV6">
+                                <rect key="frame" x="284" y="106" width="26" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="ukW-x2-RW2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="M3o-UM-gyf">
+                                <rect key="frame" x="30" y="132" width="315" height="140"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="Ybu-Xc-6Fb"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstItem="q1c-EO-8mM" firstAttribute="trailing" secondItem="ZBN-Gs-iV6" secondAttribute="trailing" constant="65" id="K7q-D2-JmO"/>
+                            <constraint firstItem="ZBN-Gs-iV6" firstAttribute="leading" secondItem="czm-kO-O4s" secondAttribute="trailing" constant="25" id="S1E-kQ-PlU"/>
+                            <constraint firstItem="czm-kO-O4s" firstAttribute="top" secondItem="11M-TK-CME" secondAttribute="bottom" constant="20" id="S3C-cP-cnN"/>
+                            <constraint firstItem="ZBN-Gs-iV6" firstAttribute="top" secondItem="11M-TK-CME" secondAttribute="bottom" constant="20" id="TaA-tY-fpF"/>
+                            <constraint firstItem="kHw-We-LeD" firstAttribute="centerX" secondItem="q1c-EO-8mM" secondAttribute="centerX" id="dUt-DH-gBI"/>
+                            <constraint firstItem="q1c-EO-8mM" firstAttribute="trailing" secondItem="M3o-UM-gyf" secondAttribute="trailing" constant="30" id="fjc-OJ-cBX"/>
+                            <constraint firstItem="M3o-UM-gyf" firstAttribute="leading" secondItem="q1c-EO-8mM" secondAttribute="leading" constant="30" id="kam-jc-Fmd"/>
+                            <constraint firstItem="kHw-We-LeD" firstAttribute="top" secondItem="M3o-UM-gyf" secondAttribute="bottom" constant="20" id="kr7-rx-8wY"/>
+                            <constraint firstItem="11M-TK-CME" firstAttribute="centerX" secondItem="q1c-EO-8mM" secondAttribute="centerX" id="mR8-gh-Vdq"/>
+                            <constraint firstItem="M3o-UM-gyf" firstAttribute="top" secondItem="czm-kO-O4s" secondAttribute="bottom" constant="10" id="qFa-0l-7jH"/>
+                            <constraint firstItem="11M-TK-CME" firstAttribute="top" secondItem="q1c-EO-8mM" secondAttribute="top" constant="30" id="ulu-xc-OgQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q1c-EO-8mM"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Currency" image="currency-30" id="glU-ec-RWL"/>
+                    <connections>
+                        <outlet property="currencyTableView" destination="M3o-UM-gyf" id="zdD-cw-8hH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kmx-hB-Z1u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-767.20000000000005" y="981.85907046476768"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="326-cZ-eke">
+            <objects>
+                <tabBarController id="meU-2J-l4w" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IZZ-25-d43">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tCz-71-PlF" kind="relationship" relationship="viewControllers" id="tjb-QT-PUy"/>
+                        <segue destination="JKr-iD-e3g" kind="relationship" relationship="viewControllers" id="2ck-si-4gN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qQw-nG-HIX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-365" y="228"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="atm-30" width="22.5" height="22.5"/>
+        <image name="currency-30" width="22.5" height="22.5"/>
+    </resources>
+</document>
