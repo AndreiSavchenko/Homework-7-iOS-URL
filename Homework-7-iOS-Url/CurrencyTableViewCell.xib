@@ -23,25 +23,25 @@
                         <rect key="frame" x="0.0" y="5.5" width="315" height="30"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B0H-lo-r3I">
-                                <rect key="frame" x="0.0" y="0.0" width="67" height="30"/>
+                                <rect key="frame" x="0.0" y="0.0" width="57" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xD1-Kz-W8f">
-                                <rect key="frame" x="83" y="0.0" width="66.5" height="30"/>
+                                <rect key="frame" x="73" y="0.0" width="56.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nRh-VO-80M">
-                                <rect key="frame" x="165.5" y="0.0" width="67" height="30"/>
+                                <rect key="frame" x="145.5" y="0.0" width="77" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Abo-hW-XhV">
-                                <rect key="frame" x="248.5" y="0.0" width="66.5" height="30"/>
+                                <rect key="frame" x="238.5" y="0.0" width="76.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -50,7 +50,7 @@
                         <constraints>
                             <constraint firstItem="Abo-hW-XhV" firstAttribute="width" secondItem="nRh-VO-80M" secondAttribute="width" id="EQC-B6-McP"/>
                             <constraint firstAttribute="height" constant="30" id="T4x-5V-FLk"/>
-                            <constraint firstItem="nRh-VO-80M" firstAttribute="width" secondItem="xD1-Kz-W8f" secondAttribute="width" id="Vak-T5-ugf"/>
+                            <constraint firstItem="nRh-VO-80M" firstAttribute="width" secondItem="xD1-Kz-W8f" secondAttribute="width" constant="20" id="Vak-T5-ugf"/>
                             <constraint firstItem="xD1-Kz-W8f" firstAttribute="width" secondItem="B0H-lo-r3I" secondAttribute="width" id="eEx-0b-Kgo"/>
                         </constraints>
                     </stackView>

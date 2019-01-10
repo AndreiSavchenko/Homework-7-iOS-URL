@@ -14,6 +14,11 @@ class CurrencyViewController: UIViewController {
     
     @IBOutlet private weak var currencyTableView: UITableView!
     
+    @IBAction func refreshButton(_ sender: UIButton) {
+        fetchData()
+        print("Refresh")
+    }
+    
     // MARK: Delegate
     
     private lazy var currencyDataSource = CurrencyViewControllerDataSource(currencyTableView: self.currencyTableView)
@@ -33,10 +38,6 @@ class CurrencyViewController: UIViewController {
         CurrencyNetwork.shared.retrieveCurrency { [weak self] in
             self?.currencyDataSource.reload(with: $0)
         }
-//        shared.retrieveCurrency(type: <#T##CurrencyType#>, term: <#T##String#>, completion: <#T##(([CurrencyModel]) -> ())##(([CurrencyModel]) -> ())##([CurrencyModel]) -> ()#>)
-//        (type: .coursid, term: "11") { ([weak self]) in
-//            self?.dataSource.reload(with: $0)
-//        }
     }
 }
 

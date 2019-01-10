@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CurrencyObject: Decodable,CurrencyModel {
+struct CurrencyObject: Decodable, CurrencyModel {
     let ccy: String?
     let baseCcy: String?
     let buy: String?
@@ -27,11 +27,10 @@ struct CurrencyObject: Decodable,CurrencyModel {
         }
         
         do {
-            print("333")
-            let object = try JSONDecoder().decode(CurrencyObject.self, from: data)
-            return [object]
+            let object = try JSONDecoder().decode([CurrencyObject].self, from: data)
+            return object
         } catch {
-            print("Decode failed")
+            print("Decode failed  \(error)")
             return []
         }
     }

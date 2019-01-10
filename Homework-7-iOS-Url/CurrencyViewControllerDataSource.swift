@@ -35,7 +35,7 @@ final class CurrencyViewControllerDataSource: NSObject { //????????????????? fin
     // Private methods
     
     private func registerCells() {
-        currencyTableView.register(.init(nibName: "CurrencyCell", bundle:nil), forCellReuseIdentifier: currencyTableViewCellIdentifier)
+        currencyTableView.register(.init(nibName: "CurrencyTableViewCell", bundle:nil), forCellReuseIdentifier: currencyTableViewCellIdentifier)
     }
     
     private func showErrorLabel(message: String) {

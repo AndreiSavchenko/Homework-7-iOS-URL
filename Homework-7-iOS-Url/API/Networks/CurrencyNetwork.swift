@@ -32,8 +32,6 @@ final class CurrencyNetwork {
     
     // MARK: Public methods
     
-//    func retrieveCurrency(type: CurrencyType, term: String,
-//                              completion: @escaping (([CurrencyModel]) -> ())) {
     func retrieveCurrency(completion: @escaping (([CurrencyModel]) -> ())) {
 
         dataTask?.cancel()
@@ -44,8 +42,6 @@ final class CurrencyNetwork {
         urlComponents.queryItems = [.init(name: "exchange", value: nil),
                                     .init(name: "json", value: nil),
                                     .init(name: "coursid", value: "11")]
-        
-        //print("urlComponents.queryItems = \(urlComponents.url)")
         
         dataTask = defaultSession.dataTask(with: urlComponents.url!) { data, response, error in
             var models: [CurrencyModel] = []
@@ -58,8 +54,6 @@ final class CurrencyNetwork {
                 models.append(errorData)
                 return
             }
-            print("111")
-            print(CurrencyObject.objects(data: data))
             models.append(contentsOf: CurrencyObject.objects(data: data))
         }
         
